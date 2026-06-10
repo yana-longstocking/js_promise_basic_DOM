@@ -29,4 +29,6 @@ function showMessage(text, isError = false) {
 }
 
 promise1.then(() => showMessage('Promise was resolved!'));
+promise1.catch(() => showMessage('Promise was rejected!', true));
+promise2.then(() => showMessage('Promise was resolved!'));
 promise2.catch(() => showMessage('Promise was rejected!', true));
